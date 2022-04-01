@@ -1,0 +1,121 @@
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(19, 18, 18);
+            color: aliceblue;
+        }
+        
+        .head {
+            text-align: center;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+        
+        .head h1 {
+            color: brown;
+            font-size: 2.5rem;
+            font-family: 'Dela Gothic One', cursive;
+            letter-spacing: 30px;
+        }
+        
+        .head p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        input {
+            background-color: #2d3236bd !important;
+            outline: none !important;
+            border: none !important;
+            margin-bottom: 30px;
+            padding: 21px 31px !important;
+            font-size: 3rem;
+            color: aliceblue !important;
+            font-weight: 500 !important;
+            border-radius: 20px !important;
+            cursor: pointer;
+            transition: 1s;
+        }
+        
+        input:focus {
+            transform: scale(1.1);
+            border: 1px solid #fff !important;
+        }
+        
+        .countInputs input {
+            width: 20%;
+        }
+        
+        small {
+            background-color: crimson;
+            border-radius: 20%;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            top: 5px;
+            right: -9px;
+            cursor: pointer;
+        }
+        
+        small::before {
+            content: 'Total : ';
+            font-size: 18px;
+            color: black;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            width: 100% !important;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            padding: 15px !important;
+            border-radius: 30px !important;
+            transition: all 0.5s linear !important;
+            font-weight: 800 !important;
+        }
+        
+        .btnSearch button {
+            width: 45% !important;
+            padding: 15px !important;
+            border-radius: 30px !important;
+        }
+        
+        button:hover {
+            letter-spacing: 3px;
+        }
+        
+        .btnSearch {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .btBody {
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+        }
+        
+        th {
+            color: #ffff;
+            text-transform: uppercase;
+            margin-bottom: 10px !important;
+        }
+        
+        td {
+            color: #fff !important;
+        }
+        
+        .alert-danger {
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        
+        .alert-danger p {
+            margin: 15px 15px;
+        }

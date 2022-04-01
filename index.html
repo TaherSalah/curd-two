@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the CRUD TWO</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    .
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="crud">
+                    <div class="head">
+                        <h1>CURD</h1>
+                        <p>Product Management System</p>
+                    </div>
+                    <div class="crudInputs">
+                        <input type="text" id="title" placeholder="Title" class="form-control">
+                        <div id="alertTitle" class=" alert-danger py-2 text-dark my-4 d-none">
+                            <p>The first letter of the product Name must be a capital letter For Ex(A-Z)</p>
+                            <p>The must not contain product Name symbols For <span>Ex ( @ % .. )</span> </p>
+                            <p>The number of product Name characters should minlenght 3 and maxlenght 8 For Ex(Samsong)</p>
+                        </div>
+                    </div>
+                    <div class="countInputs d-flex position-relative">
+                        <input onkeyup="getTolal()" type="number" id="price" placeholder="Price" class="form-control">
+                        <input onkeyup="getTolal()" type="number" id="taxes" placeholder="taxes" class="form-control mx-3">
+                        <input onkeyup="getTolal()" type="number" id="ads" placeholder="Ads" class="form-control mx-lg-3">
+                        <input onkeyup="getTolal()" type="number" id="discount" placeholder="Discount" class="form-control mx-3">
+                        <small id="total" class="position-absolute px-3"></small>
+                    </div>
+                    <input type="number" id="count" placeholder="Count" class="form-control">
+                    <div id="alertCount" class=" alert-danger py-2 text-dark my-4 d-none">
+                        <p>The must not contain product Name symbols For <span>Ex ( @ % .. )</span> </p>
+                        <p>The number of product Name characters should minlenght 3 and maxlenght 8 For Ex(Samsong)</p>
+                    </div>
+                    <input type="text" id="category" placeholder="Category" class="form-control">
+                    <div id="alertCategory" class=" alert-danger py-2 text-dark my-4 d-none">
+                        <p>The first letter of the product Name must be a capital letter For Ex(A-Z)</p>
+                        <p>The must not contain product Name symbols For <span>Ex ( @ % .. )</span> </p>
+                        <p>The number of product Name characters should minlenght 3 and maxlenght 8 For Ex(Samsong)</p>
+                    </div>
+                    <button id="submit" class="btn btn-outline-light ">Create Product</button>
+                    <input onkeyup="productSearch(this.value)" type="search " id="search" placeholder="search " class="form-control ">
+                    <div class="btnSearch ">
+                        <button onclick="searchMood(this.id)" id="searchTitle" class="btn btn-outline-success ">Search By Title</button>
+                        <button onclick="searchMood(this.id)" id="searchCategory" class="btn btn-outline-secondary ">Search By Category</button>
+                    </div>
+                    <div id="deleteAll"></div>
+                    <div class="row py-5 ">
+                        <div class="col-md-12 ">
+                            <table class="table table-striped text-center ">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>title</th>
+                                        <th>price</th>
+                                        <th>taxes</th>
+                                        <th>ads</th>
+                                        <th>discount</th>
+                                        <th>totle</th>
+                                        <th>category</th>
+                                        <th>update</th>
+                                        <th>delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbodyData">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--------------script links-------------------->
+    <script src="js/all.min.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
