@@ -38,7 +38,6 @@ title.onkeyup = function() {
             title.classList.remove('is-invalid');
             alertTitle.classList.add('d-none')
 
-
         } else {
             title.classList.add('is-invalid');
             alertTitle.classList.remove('d-none')

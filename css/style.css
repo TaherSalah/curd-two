@@ -119,3 +119,20 @@
         .alert-danger p {
             margin: 15px 15px;
         }
+        /********************************************************* Start media  screen****************************************************/
+
+@media only screen and (max-width: 688px) {
+    body{
+        background-color: aquamarine !important;
+    
+     }
+     .col-md-12{
+        flex-basis: 100% !important;
+    }
+    small{
+        margin-left: 50px !important;
+        right:-75px;
+    }
+}
+
+/********************************************************* End media  screen****************************************************/
