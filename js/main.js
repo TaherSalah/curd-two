@@ -212,16 +212,16 @@ function displayProducts() {
     let productTable = ``;
     for (let i = 0; i < products.length; i++) {
         productTable += `<tr>
-                <td>${[i+1]}</td>
-                <td>${products[i].title}</td>
-                <td>${products[i].price}</td>
-                <td>${products[i].taxes}</td>
-                <td>${products[i].ads}</td>
-                <td>${products[i].discount}</td>
-                <td>${products[i].total}</td>
-                <td>${products[i].category}</td>
-                <td><button onclick="updateProduct(${i})" id="update" class="btn btBody  btn-outline-warning">Update</button></td>
-                <td><button onclick="deleteProduct(${i})" id="delete " class="btn btBody btn-outline-danger ">Delete</button></td>
+                <td data-label="ID">${[i+1]}</td>
+                <td data-label="TITLE" >${products[i].title}</td>
+                <td data-label="PRICE" >${products[i].price}</td>
+                <td data-label="TAXES">${products[i].taxes}</td>
+                <td data-label="ADS">${products[i].ads}</td>
+                <td data-label="DISCOUNT">${products[i].discount}</td>
+                <td data-label="TOTLE">${products[i].total}</td>
+                <td data-label="CATEGORY">${products[i].category}</td>
+                <td data-label="Update"><button onclick="updateProduct(${i})" id="update" class="btn btBody  btn-outline-warning">Update</button></td>
+                <td data-label="Delete"><button onclick="deleteProduct(${i})" id="delete " class="btn btBody btn-outline-danger ">Delete</button></td>
         </tr>`
     }
     document.getElementById('tbodyData').innerHTML = productTable;
